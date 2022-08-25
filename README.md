@@ -1,5 +1,5 @@
 # Visualizing Variant Annotations
-It's important to visualize your data, particularly when making decisions on how to hard filter it!
+It is important to visualize your data, particularly when making decisions on how to hard filter it!
 
 These scripts were generated: 
 - to create tables and plots from VCF files using GATK and VCFtools for quality filtering and data summaries.
