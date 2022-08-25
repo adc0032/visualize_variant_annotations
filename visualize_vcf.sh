@@ -1,10 +1,10 @@
 #! /bin/bash
 
 #SBATCH -J visualize_variants
-#SBATCH -t 1-15:00:00
+#SBATCH -t 05:00:00
 #SBATCH -N 1
 #SBATCH -n 15
-#SBATCH --mem 60G
+#SBATCH --mem 50G
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 #SBATCH --mail-type=END,FAIL
@@ -17,7 +17,7 @@ module load bcftools/1.11
 module load vcftools/0.1.17
 module load samtools/1.11
 module load R/4.0.3
-source activate
+source activate 
 
 ## Variables: data(dd), working(wd), and save(sd) directory; jobfile for array(jf) output prefix(out)
 dd=
